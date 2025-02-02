@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fowl</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* class selector  */
+    p.odd{
+        background-color: red;
+    }
+    
+    section li.odd{
+        background-color: moccasin;
+    } 
+    
+    .odd{
+        background-color: yellow;
+    }
+    
+    .even{
+        background-color: green;
+    }
+    
+    .start{
+        font-size: 2em;
+    }
+    
+    p.even.start{
+        background-color: tomato;
+    }
+    
+    .start.even{
+        background-color: blue;
+    }
+    body > h2 + p.franc ~ li + li.even::first-letter{
+        background-color: yellow;
+    }
+
+    /*  pseudoclasses */
+    a{
+        color: black;
+    }
+    a:visited{
+        color: goldenrod;
+    }
+
+    a:hover{
+        color: white;
+        background-color: black;
+    }
+
+    ul li:first-of-type{
+        border: 10px solid violet;
+    }
+    ul li:last-of-type{
+        border: 10px solid violet;
+    }
+    ul li:nth-of-type(5){
+        border: 10px solid red;
+    }
+
+    section p:nth-of-type(even){
+        border: 10px dashed green;
+    }
+
+    section p:nth-of-type(odd){
+        border: 10px dotted blue;
+    }
+
+    section p:nth-of-type(2n){
+        border: 10px solid yellow;
+    }
+
+    section p:nth-of-type(3n+2){
+        border: 10px solid orange;
+    }
+
+    #grow{
+        color: grey;
+    }
+
+    p#grow{
+        font-size: 2em;
+    }
+
+</style>
+<body>
+
+
+    <!-- section>ul>(li.odd{List100$}+li.even{list200$})*4 -->
+    <section>
+    
+        <h1>List of Items</h1>
+        <ul>
+            <li class="odd start">List1001</li>
+            <li class="even" id="grow">list2001</li>
+            <li class="odd">List1002</li>
+            <li class="even start">list2002</li>
+            <li class="odd">List1003</li>
+            <li class="even" id="grow">list2003</li>
+            <li class="odd">List1004</li>
+            <li class="even">list2004</li>
+        </ul>
+    </section>
+
+    <section>
+        <!-- ((p.even>lorem)+(p.odd>lorem))*3 -->
+        <p class="even start">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate nam doloribus, aspernatur suscipit quo tempore iusto beatae, <a href="./franc.png"> modi laboriosam nesciunt quae explicabo </a> qui sit commodi sed maxime recusandae illum et.</p>
+        <p class="odd">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ratione enim cum, fugit quis itaque animi, velit veniam quae labore quisquam cupiditate. Alias, numquam doloribus officiis quaerat debitis voluptatem! Vel?</p>
+        <p class="even">Perferendis dolorem ipsa excepturi temporibus! Dolor, quasi? Aut necessitatibus in voluptatibus, reprehenderit soluta explicabo perspiciatis odit, quae quasi aspernatur at sequi blanditiis natus repellat consectetur facere cumque delectus magni assumenda.</p>
+        <p class="odd start">Animi facilis beatae hic, molestiae illum fuga, id dolorem error eligendi expedita ipsam. Commodi eveniet quos quod quas, dolorum in consequuntur voluptatum quaerat rem omnis perspiciatis nulla numquam? Libero, dicta.</p>
+        <p class="even">Veniam repellendus placeat rerum sed amet eveniet quo, dolorem hic sint sequi in quibusdam nostrum impedit odio voluptatibus eligendi similique officiis saepe vero, adipisci magnam perferendis. Ut explicabo veniam facere?</p>
+        <p class="odd">Libero, quis perspiciatis debitis dicta nisi totam, facere molestias, voluptas assumenda asperiores dolorum voluptatibus praesentium iure in non? Beatae molestias dolor eum ducimus excepturi, nam neque at totam quia quae?</p>
+    </section>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+                <th>Header 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Col 1</td>
+                <td>Row 1, Col 2</td>
+                <td>Row 1, Col 3</td>
+                <td>Row 1, Col 4</td>
+            </tr>
+            <tr>
+                <td>Row 2, Col 1</td>
+                <td>Row 2, Col 2</td>
+                <td>Row 2, Col 3</td>
+                <td>Row 2, Col 4</td>
+            </tr>
+            <tr>
+                <td>Row 3, Col 1</td>
+                <td>Row 3, Col 2</td>
+                <td>Row 3, Col 3</td>
+                <td>Row 3, Col 4</td>
+            </tr>
+            <tr>
+                <td>Row 4, Col 1</td>
+                <td>Row 4, Col 2</td>
+                <td>Row 4, Col 3</td>
+                <td>Row 4, Col 4</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
